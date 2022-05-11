@@ -1,0 +1,24 @@
+2022-05-10 01:38:40 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 3600 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\Final\BankingApplication (1)\BankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\Final\BankingApplication (1)\BankingApplication)
+2022-05-10 01:38:40 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-10 01:38:40 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-10 01:38:41 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.999 seconds (JVM running for 11482.135)
+2022-05-10 01:40:10 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 3600 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\Final\BankingApplication (1)\BankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\Final\BankingApplication (1)\BankingApplication)
+2022-05-10 01:40:10 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-10 01:40:10 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-10 01:40:11 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.807 seconds (JVM running for 11572.08)
+2022-05-10 01:44:36 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 3600 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\Final\BankingApplication (1)\BankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\Final\BankingApplication (1)\BankingApplication)
+2022-05-10 01:44:36 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-10 01:44:36 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-10 01:44:36 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.754 seconds (JVM running for 11837.623)
