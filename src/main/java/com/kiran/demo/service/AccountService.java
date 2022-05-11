@@ -35,6 +35,7 @@ public class AccountService {
 		BigDecimal amount = transferBalanceRequest.getAmount();
 		 Details fromAccount = accountRepository.findByAccountidEquals(fromAccountNumber);
 		 Details toAccount = accountRepository.findByAccountidEquals(toAccountNumber);
+		 if(fromAccount.isAccountstatus() && toAccount.isAccountstatus()) {
 	        if(fromAccount.getAccountbal().compareTo(BigDecimal.ONE) == 1
 	                && fromAccount.getAccountbal().compareTo(amount) == 1){
 	            fromAccount.setAccountbal(fromAccount.getAccountbal().subtract(amount));
@@ -45,6 +46,7 @@ public class AccountService {
 	            Transaction transaction1 = trarepo.save(transaction);
 	            return transaction1;
 	        }
+		 }
 		return null;
 	}
 	

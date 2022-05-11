@@ -1,5 +1,5 @@
-2022-05-11 11:33:53 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool -
-				HikariPool-1 - Error thrown while acquiring connection from data source
+2022-05-10 02:00:23 [HikariPool-4 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool -
+				HikariPool-4 - Error thrown while acquiring connection from data source
 org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
@@ -7,8 +7,8 @@ org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in excl
 	at org.h2.message.DbException.get(DbException.java:181)
 	at org.h2.message.DbException.get(DbException.java:170)
 	at org.h2.engine.Session.checkSuspended(Session.java:1369)
-	at org.h2.engine.Session.isOpen(Session.java:1303)
-	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1639)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633)
 	at org.h2.command.Command.executeQuery(Command.java:186)
 	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
 	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
