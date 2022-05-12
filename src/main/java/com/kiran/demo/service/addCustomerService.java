@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kiran.demo.model.Details;
+import com.kiran.demo.repository.AccountRepository;
 import com.kiran.demo.repository.BankRepo;
 
 @Service
@@ -22,6 +23,8 @@ public class addCustomerService {
 	BankRepo bankrepo;
 	@Autowired
 	List<Details> details;
+	@Autowired
+	AccountRepository accrepo;
 
 	//get all data
 	public List<Details> getAllOrders() {
@@ -40,16 +43,8 @@ public class addCustomerService {
 	}
 	
 	//Get data by Customer ID
-	public Details getById(int id) {
-		Optional<Details> optional = bankrepo.findById(id);
-		Details detail = null;
-		if (optional.isPresent()) {
-			detail = optional.get();
-		} else {
-			throw new RuntimeException(" Customer not found for id :: " + id);
-		}
-		logger.debug(" Successfully Getting Customer Details By Id ");
-		return detail;
+	public Details getById(String id) {
+		return accrepo.findByAccountidEquals(id);
 	}
 	
 

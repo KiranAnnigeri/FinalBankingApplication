@@ -1,5 +1,7 @@
 package com.kiran.demo.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -8,7 +10,7 @@ import com.kiran.demo.model.Details;
 
 public interface BankRepo extends CrudRepository<Details, Integer> {
 	
-	 //Details findByAccountNumberEquals(String accountNumber);
+	 // Details findByAccountIdEquals(String accountId);
 
 	  @Query("from Details where Account_Status='true'") 
 	  public Iterable<Details> isActiveForThreeYears();

@@ -5,6 +5,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import org.hamcrest.Matchers;
@@ -40,18 +42,18 @@ class BankingApplicationTests {
 	
 	// Adding Customer
 	@Test
-	public void NewCustomer() {
-		Details detail = new Details("1254869478", "Kiran", 102, "1999/24/04", "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
+	public void NewCustomer() throws ParseException {
+		Details detail = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04") , "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
 		Details result = add.addCustomer(detail);
 		assertThat(result.equals(detail));
 	}
 
 	// Checking Active
 	@Test
-	public void ActiveCustomer() {
+	public void ActiveCustomer() throws ParseException {
 		boolean actual = false;
 		boolean expected = true;
-		Details detail = new Details("1254869478", "Kiran", 102, "1999/24/04", "savings", true , new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
+		Details detail = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true , new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
 		Details result = add.addCustomer(detail);
 		List<Details> active = check.checkActivity();
 		for (Details testObj : active) {
@@ -62,9 +64,9 @@ class BankingApplicationTests {
 
 	//Checking Money Transfer
 	@Test
-	public void sendMoneyTest() {
-		Details account1 = new Details("1254869478", "Kiran", 102, "1999/24/04", "savings", true, new BigDecimal(50000),"9999999999", "rest@gmail.com", 2500);
-		Details account2 = new Details("1254869473", "Kiran", 102, "1999/24/04", "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);		
+	public void sendMoneyTest() throws ParseException {
+		Details account1 = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(50000),"9999999999", "rest@gmail.com", 2500);
+		Details account2 = new Details("1254869473", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);		
 		Details result1 = add.addCustomer(account1);
 		Details result2 = add.addCustomer(account2);
 		TransferBalanceRequest transferBalanceRequest = new TransferBalanceRequest(account1.getAccountid(),account2.getAccountid(), new BigDecimal(3000));
@@ -79,9 +81,9 @@ class BankingApplicationTests {
 	
 	//Checking Return Statement
 	@Test
-	public void getStatement() {
-		Details account1 = new Details("1254869478", "Kiran", 102, "1999/24/04", "savings", true, new BigDecimal(50000),"9999999999", "rest@gmail.com", 2500);
-		Details account2 = new Details("1254869473", "Kiran", 102, "1999/24/04", "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
+	public void getStatement() throws ParseException {
+		Details account1 = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(50000),"9999999999", "rest@gmail.com", 2500);
+		Details account2 = new Details("1254869473", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
 		Details result1 = add.addCustomer(account1);
 		Details result2 = add.addCustomer(account2);
 		TransferBalanceRequest transferBalanceRequest = new TransferBalanceRequest(account1.getAccountid(),account2.getAccountid(), new BigDecimal(3000));
