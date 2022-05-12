@@ -43,59 +43,59 @@ public class loginController {
 	@Autowired
 	private AccountService accountservice;
 
-	// For all the active accounts
-	@RequestMapping("/active")
+	//Get Details of all the active accounts
+	@RequestMapping("/ActiveAccounts")
 	public List<Details> checkActive() {
 		logger.info("Checking the Active Status");
 		return checkactiveService.checkActivity();
 	}
 
-	// For all active accounts and positive balance
-	@RequestMapping("/active/bal")
+	//Get Details of all active accounts and positive balance
+	@RequestMapping("/ActiveAccounts/Balance>0")
 	public List<Details> checkActiveBal() {
 		logger.info(" Verifing the validation ");
 		logger.trace(" validation is tracing");
 		return activeandmoreService.checkActivitybal();
 	}
 
-	// For all active account , positive balance and MAB>1000
-	@RequestMapping("/active/bal/mab")
+	//Get Details of all active account , positive balance and MAB>1000
+	@RequestMapping("/ActiveAccounts/Balance>0/MonthlyAverageBalance>1000")
 	public List<Details> checkActiveBalMab() {
 		logger.trace(" Checking Balance");
 		logger.info("giving monthly average balance");
 		return mabService.checkActivitymab();
 	}
 
-	// For all accounts
-	@RequestMapping("/getall")
+	//Get Details of all accounts
+	@RequestMapping("/GetAllAccounts")
 	public List<Details> getalldetails() {
 		logger.debug(" Provide All customer details ");
 		return addcustomerService.getAllOrders();
 	}
 
 	// Input Customer Details
-	@PostMapping(value = "/customer")
+	@PostMapping(value = "/AddCustomerDetails")
 	public void addCustomer(@Valid @RequestBody Details details) {
 		logger.debug("Successfully Posted all Details of Customer ");
 		addcustomerService.addCustomer(details);
 	}
 
 	// Find customer by ID
-	@GetMapping(value = "/getbyid/{id}")
-	public Details getbyID(@PathVariable(value = "id") int id) {
+	@GetMapping(value = "/GetDetailsByID/{id}")
+	public Details getbyID(@PathVariable(value = "id") String id) {
 		logger.debug("Get Cutomer details By Account Id ");
 		return addcustomerService.getById(id);
 	}
 
 	// TransferMoney From one account to another
-	@PostMapping(value = "/sendmoney")
+	@PostMapping(value = "/TransferMoney")
 	public Transaction sendMoney(@RequestBody TransferBalanceRequest transferBalanceRequest) {
 		logger.debug(" Transfering of Money is Successfull");
 		return accountservice.sendMoney(transferBalanceRequest);
 	}
 
 	// Get statement
-	@RequestMapping("/statement")
+	@RequestMapping("/GetStatement")
 	public AccountStatement getStatement(@RequestBody AccountStatementRequest accountStatementRequest){
 		logger.debug(" Providing the Account Statement ");
 	     return accountservice.getStatement(accountStatementRequest.getAccountNumber());

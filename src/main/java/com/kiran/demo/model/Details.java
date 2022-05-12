@@ -1,17 +1,24 @@
 package com.kiran.demo.model;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.persistence.*;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Component
@@ -21,10 +28,11 @@ public class Details {
 
 	
 
-	public Details(@Pattern(regexp = " ^\\d{10}$ ", message = " Account Id must be 10 digits") String accountid,
+	public Details(@Pattern( regexp = "^\\d{10}$", message = " Account Id must be 10 digits" ) String accountid,
 			       @NotNull String customername, 
 			       @NotNull int pan, 
-			       String dob, String accounttype,
+			       @Past(message = "Enter valid date") Date dob,
+			       String accounttype,
 			       boolean accountstatus, 
 			       BigDecimal accountbal,
 			       @NotNull @Pattern(regexp = " ^\\d{10}$ ", message = " PhoneNumber must be 10 digits") 
@@ -58,7 +66,9 @@ public class Details {
 	private int pan;
 
 	@Column(name = "DOB")
-	private String dob;
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern ="dd/MM/yyyy")
+	@Past(message="Enter Valid Date")
+	private Date dob;
 	
 	@Column(name = "Account_Type")
 	private String accounttype;
@@ -82,15 +92,14 @@ public class Details {
 	@Column(name = "MAB")
 	private long mab;
 
-	public String getAccountid() {
-		return accountid;
-	}
-
 	public Details() {
 		super();
 		
 	}
-
+	
+	public String getAccountid() {
+		return accountid;
+	}
 
 	public void setAccountid(String accountid) {
 		this.accountid = accountid;
@@ -112,11 +121,11 @@ public class Details {
 		this.pan = pan;
 	}
 
-	public String getDob() {
+	public Date getDob() {
 		return dob;
 	}
 
-	public void setDob(String dob) {
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 
