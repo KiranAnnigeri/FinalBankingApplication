@@ -3,6 +3,8 @@ package com.kiran.demo.service;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,8 @@ import com.kiran.demo.repository.TransactionRepository;
 @Service
 public class AccountService {
 
+	Logger logger = LoggerFactory.getLogger(AccountService.class);
+	
 	@Autowired
 	Details detail;
 	
@@ -45,6 +49,7 @@ public class AccountService {
 	            Transaction transaction1 = trarepo.save(transaction);
 	            return transaction1;
 	        }
+	        logger.error("MoneyTransfer Failed");
 		return null;
 	}
 	

@@ -1,0 +1,18 @@
+2022-05-11 11:57:28 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 15.0.1 on LTIN197773 with PID 19540 (C:\Users\2071748\git\FinalBankingApplication\target\classes started by 2071748 in C:\Users\2071748\git\FinalBankingApplication)
+2022-05-11 11:57:28 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-11 11:57:28 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-11 11:57:30 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 1.29 seconds (JVM running for 1263.032)
+2022-05-11 12:00:19 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 15.0.1 on LTIN197773 with PID 5244 (C:\Users\2071748\git\FinalBankingApplication\target\classes started by 2071748 in C:\Users\2071748\git\FinalBankingApplication)
+2022-05-11 12:00:19 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-11 12:00:19 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-11 12:03:36 [http-nio-8080-exec-1] INFO  c.k.demo.controller.loginController -
+				Checking the Active Status
+2022-05-11 12:03:36 [http-nio-8080-exec-1] DEBUG c.k.demo.service.CheckActiveService -
+				 Verified That Account is Active or Not 

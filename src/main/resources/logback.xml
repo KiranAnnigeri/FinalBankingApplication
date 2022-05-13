@@ -2,7 +2,10 @@
 <configuration>
 
 	<property name="DEV_HOME" value="logs" />
-
+	
+	<timestamp key ="year" datePattern="yyyy"/>
+	<timestamp  key ="month" datePattern="MM"/>
+	<timestamp key ="date" datePattern="dd"/>
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<layout class="ch.qos.logback.classic.PatternLayout">
 			<Pattern>
@@ -14,7 +17,7 @@
 
 	<appender name="FILE-AUDIT"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${DEV_HOME}/Bankingapp1.log</file>
+		<file>${DEV_HOME}/${year}/${month}/${date}/Bankingapp1.log</file>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
 				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
@@ -36,7 +39,7 @@
 
 	<appender name="FILE-ERROR"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${DEV_HOME}/error.log</file>
+		<file>${DEV_HOME}/${year}/${month}/${date}/error1.log</file>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
 				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
