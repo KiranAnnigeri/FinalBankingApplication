@@ -24,12 +24,13 @@ import com.kiran.demo.model.TransferBalanceRequest;
 import com.kiran.demo.service.AccountService;
 import com.kiran.demo.service.AciveandMoreService;
 import com.kiran.demo.service.CheckActiveService;
+import com.kiran.demo.service.EmailService;
 import com.kiran.demo.service.MABService;
 import com.kiran.demo.service.addCustomerService;
 
 @RestController
 public class loginController {
-	
+
 	Logger logger = LoggerFactory.getLogger(loginController.class);
 
 	@Autowired
@@ -42,15 +43,17 @@ public class loginController {
 	private addCustomerService addcustomerService;
 	@Autowired
 	private AccountService accountservice;
+	@Autowired
+	private EmailService emailService;
 
-	//Get Details of all the active accounts
+	// Get Details of all the active accounts
 	@RequestMapping("/ActiveAccounts")
 	public List<Details> checkActive() {
 		logger.info("Checking the Active Status");
 		return checkactiveService.checkActivity();
 	}
 
-	//Get Details of all active accounts and positive balance
+	// Get Details of all active accounts and positive balance
 	@RequestMapping("/ActiveAccounts/Balance>0")
 	public List<Details> checkActiveBal() {
 		logger.info(" Verifing the validation ");
@@ -58,7 +61,7 @@ public class loginController {
 		return activeandmoreService.checkActivitybal();
 	}
 
-	//Get Details of all active account , positive balance and MAB>1000
+	// Get Details of all active account , positive balance and MAB>1000
 	@RequestMapping("/ActiveAccounts/Balance>0/MonthlyAverageBalance>1000")
 	public List<Details> checkActiveBalMab() {
 		logger.trace(" Checking Balance");
@@ -66,7 +69,7 @@ public class loginController {
 		return mabService.checkActivitymab();
 	}
 
-	//Get Details of all accounts
+	// Get Details of all accounts
 	@RequestMapping("/GetAllAccounts")
 	public List<Details> getalldetails() {
 		logger.debug(" Provide All customer details ");
@@ -96,8 +99,14 @@ public class loginController {
 
 	// Get statement
 	@RequestMapping("/GetStatement")
-	public AccountStatement getStatement(@RequestBody AccountStatementRequest accountStatementRequest){
+	public AccountStatement getStatement(@RequestBody AccountStatementRequest accountStatementRequest) {
 		logger.debug(" Providing the Account Statement ");
-	     return accountservice.getStatement(accountStatementRequest.getAccountNumber());
-	    }
+		return accountservice.getStatement(accountStatementRequest.getAccountNumber());
+	}
+	
+	//Send Email
+	@GetMapping("/SendEmail")
+	public String sendEmail() {
+		return emailService.sendEmail();
+	}
 }

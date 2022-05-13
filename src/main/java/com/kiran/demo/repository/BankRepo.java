@@ -10,8 +10,6 @@ import com.kiran.demo.model.Details;
 
 public interface BankRepo extends CrudRepository<Details, Integer> {
 	
-	 // Details findByAccountIdEquals(String accountId);
-
 	  @Query("from Details where Account_Status='true'") 
 	  public Iterable<Details> isActiveForThreeYears();
 	  
