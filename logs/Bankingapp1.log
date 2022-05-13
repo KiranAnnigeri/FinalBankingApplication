@@ -574,3 +574,189 @@
 				 Check Whether the MAB is Above 1000 or not 
 2022-05-13 16:57:49 [http-nio-8080-exec-2] INFO  com.kiran.demo.service.MABService -
 				Successfully Verified The MAB 
+2022-05-13 22:30:38 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 14808 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:30:38 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:30:38 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:30:39 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.661 seconds (JVM running for 27643.056)
+2022-05-13 22:42:41 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 14808 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:42:41 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:42:41 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:46:21 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 14808 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:46:21 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:46:21 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:47:24 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 14808 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:47:24 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:47:24 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:47:52 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7476 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:47:52 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:47:52 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:49:06 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 8132 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:49:06 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:49:06 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:49:35 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 34052 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:49:36 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:49:36 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:53:49 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7492 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:53:49 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:53:49 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 22:58:49 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 36188 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 22:58:49 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 22:58:49 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:00:05 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7700 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 23:00:05 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 23:00:05 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:00:08 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 4.219 seconds (JVM running for 5.101)
+2022-05-13 23:00:32 [http-nio-8080-exec-9] DEBUG c.k.demo.controller.loginController -
+				 Provide All customer details 
+2022-05-13 23:00:32 [http-nio-8080-exec-9] DEBUG c.k.demo.service.addCustomerService -
+				 Get all Customer Details
+2022-05-13 23:00:32 [http-nio-8080-exec-9] INFO  c.k.demo.service.addCustomerService -
+				 Successfully got all customer Details 
+2022-05-13 23:00:38 [http-nio-8080-exec-2] INFO  c.k.demo.controller.loginController -
+				Checking the Active Status
+2022-05-13 23:00:39 [http-nio-8080-exec-2] DEBUG c.k.demo.service.CheckActiveService -
+				 Verified That Account is Active or Not 
+2022-05-13 23:00:42 [http-nio-8080-exec-5] INFO  c.k.demo.controller.loginController -
+				 Verifing the validation 
+2022-05-13 23:00:42 [http-nio-8080-exec-5] TRACE c.k.demo.controller.loginController -
+				 validation is tracing
+2022-05-13 23:00:42 [http-nio-8080-exec-5] DEBUG c.k.demo.service.AciveandMoreService -
+				Check whether the account is account is Active or not and Balance is more than 0 or not 
+2022-05-13 23:00:42 [http-nio-8080-exec-5] INFO  c.k.demo.service.AciveandMoreService -
+				 Account verfication Successfull
+2022-05-13 23:00:44 [http-nio-8080-exec-6] TRACE c.k.demo.controller.loginController -
+				 Checking Balance
+2022-05-13 23:00:44 [http-nio-8080-exec-6] INFO  c.k.demo.controller.loginController -
+				giving monthly average balance
+2022-05-13 23:00:44 [http-nio-8080-exec-6] DEBUG com.kiran.demo.service.MABService -
+				 Check Whether the MAB is Above 1000 or not 
+2022-05-13 23:00:44 [http-nio-8080-exec-6] INFO  com.kiran.demo.service.MABService -
+				Successfully Verified The MAB 
+2022-05-13 23:00:47 [http-nio-8080-exec-8] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:00:49 [http-nio-8080-exec-3] TRACE c.k.demo.controller.loginController -
+				 Checking Balance
+2022-05-13 23:00:49 [http-nio-8080-exec-3] INFO  c.k.demo.controller.loginController -
+				giving monthly average balance
+2022-05-13 23:00:49 [http-nio-8080-exec-3] DEBUG com.kiran.demo.service.MABService -
+				 Check Whether the MAB is Above 1000 or not 
+2022-05-13 23:00:49 [http-nio-8080-exec-3] INFO  com.kiran.demo.service.MABService -
+				Successfully Verified The MAB 
+2022-05-13 23:00:55 [http-nio-8080-exec-1] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:01:32 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7700 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 23:01:32 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 23:01:32 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:01:32 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.672 seconds (JVM running for 88.885)
+2022-05-13 23:08:34 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7700 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 23:08:34 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 23:08:34 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:08:35 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.653 seconds (JVM running for 511.33)
+2022-05-13 23:09:31 [http-nio-8080-exec-10] DEBUG c.k.demo.controller.loginController -
+				 Provide All customer details 
+2022-05-13 23:09:31 [http-nio-8080-exec-10] DEBUG c.k.demo.service.addCustomerService -
+				 Get all Customer Details
+2022-05-13 23:09:31 [http-nio-8080-exec-10] INFO  c.k.demo.service.addCustomerService -
+				 Successfully got all customer Details 
+2022-05-13 23:09:35 [http-nio-8080-exec-3] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:09:37 [http-nio-8080-exec-4] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:10:41 [http-nio-8080-exec-9] DEBUG c.k.demo.controller.loginController -
+				 Provide All customer details 
+2022-05-13 23:10:41 [http-nio-8080-exec-9] DEBUG c.k.demo.service.addCustomerService -
+				 Get all Customer Details
+2022-05-13 23:10:41 [http-nio-8080-exec-9] INFO  c.k.demo.service.addCustomerService -
+				 Successfully got all customer Details 
+2022-05-13 23:10:49 [http-nio-8080-exec-3] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:10:53 [http-nio-8080-exec-5] DEBUG c.k.demo.controller.loginController -
+				 Provide All customer details 
+2022-05-13 23:10:53 [http-nio-8080-exec-5] DEBUG c.k.demo.service.addCustomerService -
+				 Get all Customer Details
+2022-05-13 23:10:53 [http-nio-8080-exec-5] INFO  c.k.demo.service.addCustomerService -
+				 Successfully got all customer Details 
+2022-05-13 23:11:06 [http-nio-8080-exec-2] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:11:09 [http-nio-8080-exec-6] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:11:14 [http-nio-8080-exec-7] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:14:15 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7700 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 23:14:15 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 23:14:15 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:14:16 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.65 seconds (JVM running for 852.259)
+2022-05-13 23:14:30 [http-nio-8080-exec-4] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:15:45 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7700 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 23:15:45 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 23:15:45 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:15:46 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.737 seconds (JVM running for 942.513)
+2022-05-13 23:15:47 [http-nio-8080-exec-2] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:16:08 [http-nio-8080-exec-4] DEBUG c.k.demo.controller.loginController -
+				Successfully Posted all Details of Customer 
+2022-05-13 23:16:11 [http-nio-8080-exec-5] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:19:33 [http-nio-8080-exec-8] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:20:23 [http-nio-8080-exec-10] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 
+2022-05-13 23:20:54 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Starting BankingApplication using Java 16.0.2 on LTIN290478 with PID 7700 (C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication\target\classes started by 2072064 in C:\Users\2072064\OneDrive - Cognizant\Desktop\Final\FinalBankingApplication\FinalBankingApplication)
+2022-05-13 23:20:54 [restartedMain] DEBUG com.kiran.demo.BankingApplication -
+				Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-05-13 23:20:54 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				No active profile set, falling back to 1 default profile: "default"
+2022-05-13 23:20:55 [restartedMain] INFO  com.kiran.demo.BankingApplication -
+				Started BankingApplication in 0.594 seconds (JVM running for 1251.615)
+2022-05-13 23:21:06 [http-nio-8080-exec-2] DEBUG c.k.demo.controller.loginController -
+				Get Cutomer details By Account Id 

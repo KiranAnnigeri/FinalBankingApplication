@@ -78,14 +78,14 @@ public class loginController {
 
 	// Input Customer Details
 	@PostMapping(value = "/AddCustomerDetails")
-	public void addCustomer(@Valid @RequestBody Details details) {
+	public void addCustomer(@Valid @RequestBody Details details) throws Exception{
 		logger.debug("Successfully Posted all Details of Customer ");
 		addcustomerService.addCustomer(details);
 	}
 
 	// Find customer by ID
 	@GetMapping(value = "/GetDetailsByID/{id}")
-	public Details getbyID(@PathVariable(value = "id") String id) {
+	public Details getbyID(@PathVariable(value = "id") String id) throws Exception {
 		logger.debug("Get Cutomer details By Account Id ");
 		return addcustomerService.getById(id);
 	}

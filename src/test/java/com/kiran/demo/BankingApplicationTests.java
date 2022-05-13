@@ -42,7 +42,7 @@ class BankingApplicationTests {
 	
 	// Adding Customer
 	@Test
-	public void NewCustomer() throws ParseException {
+	public void NewCustomer() throws Exception {
 		Details detail = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04") , "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
 		Details result = add.addCustomer(detail);
 		assertThat(result.equals(detail));
@@ -50,7 +50,7 @@ class BankingApplicationTests {
 
 	// Checking Active
 	@Test
-	public void ActiveCustomer() throws ParseException {
+	public void ActiveCustomer() throws Exception {
 		boolean actual = false;
 		boolean expected = true;
 		Details detail = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true , new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
@@ -64,7 +64,7 @@ class BankingApplicationTests {
 
 	//Checking Money Transfer
 	@Test
-	public void sendMoneyTest() throws ParseException {
+	public void sendMoneyTest() throws Exception {
 		Details account1 = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(50000),"9999999999", "rest@gmail.com", 2500);
 		Details account2 = new Details("1254869473", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);		
 		Details result1 = add.addCustomer(account1);
@@ -81,7 +81,7 @@ class BankingApplicationTests {
 	
 	//Checking Return Statement
 	@Test
-	public void getStatement() throws ParseException {
+	public void getStatement() throws Exception {
 		Details account1 = new Details("1254869478", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(50000),"9999999999", "rest@gmail.com", 2500);
 		Details account2 = new Details("1254869473", "Kiran", 102, new SimpleDateFormat("dd/MM/yyyy").parse("1999/24/04"), "savings", true, new BigDecimal(2000),"9999999999", "rest@gmail.com", 2500);
 		Details result1 = add.addCustomer(account1);
