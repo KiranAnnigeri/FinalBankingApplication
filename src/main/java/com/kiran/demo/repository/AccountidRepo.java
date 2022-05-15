@@ -10,7 +10,6 @@ import com.kiran.demo.model.Details;
 @Repository
 public interface AccountidRepo extends JpaRepository<Details, Long> {
 	    Optional<Details> findByAccountidEquals(String accountid);
-	
 }
 
 

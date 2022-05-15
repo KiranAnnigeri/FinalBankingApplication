@@ -45,7 +45,7 @@ public class addCustomerService {
 	public Details addCustomer (Details details) throws Exception {
 		Optional<Details> AccountId = accidrepo.findByAccountidEquals(details.getAccountid());
 		if(AccountId.isPresent()) {
-			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Account number exists!!");
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Account number already exists!!");
 		}
 		else {
 		return bankrepo.save(details);
