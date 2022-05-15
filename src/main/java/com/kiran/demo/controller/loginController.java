@@ -2,7 +2,6 @@ package com.kiran.demo.controller;
 
 import java.util.List;
 
-import javax.persistence.NonUniqueResultException;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.kiran.demo.model.AccountStatement;
@@ -47,14 +45,14 @@ public class loginController {
 	private EmailService emailService;
 
 	// Get Details of all the active accounts
-	@RequestMapping("/ActiveAccounts")
+	@GetMapping("/ActiveAccounts")
 	public List<Details> checkActive() {
 		logger.info("Checking the Active Status");
 		return checkactiveService.checkActivity();
 	}
 
 	// Get Details of all active accounts and positive balance
-	@RequestMapping("/ActiveAccounts/Balance>0")
+	@GetMapping("/ActiveAccounts/Balance>0")
 	public List<Details> checkActiveBal() {
 		logger.info(" Verifing the validation ");
 		logger.trace(" validation is tracing");
@@ -62,7 +60,7 @@ public class loginController {
 	}
 
 	// Get Details of all active account , positive balance and MAB>1000
-	@RequestMapping("/ActiveAccounts/Balance>0/MonthlyAverageBalance>1000")
+	@GetMapping("/ActiveAccounts/Balance>0/MonthlyAverageBalance>1000")
 	public List<Details> checkActiveBalMab() {
 		logger.trace(" Checking Balance");
 		logger.info("giving monthly average balance");
@@ -70,7 +68,7 @@ public class loginController {
 	}
 
 	// Get Details of all accounts
-	@RequestMapping("/GetAllAccounts")
+	@GetMapping("/GetAllAccounts")
 	public List<Details> getalldetails() {
 		logger.debug(" Provide All customer details ");
 		return addcustomerService.getAllOrders();
