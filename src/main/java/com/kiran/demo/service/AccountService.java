@@ -4,7 +4,9 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.kiran.demo.model.TransferBalanceRequest;
 import com.kiran.demo.model.AccountStatement;
@@ -46,8 +48,15 @@ public class AccountService {
 	            Transaction transaction1 = trarepo.save(transaction);
 	            return transaction1;
 	        }
+	        else {
+	        	throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+						" Insufficient Balance in Account number : " +fromAccountNumber + ". Available balance is " +fromAccount.getAccountbal());
+	        }
 		 }
-		return null;
+		 else {
+			 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+						"Acount should be active" );
+		 }
 	}
 	
 	public AccountStatement getStatement(String accountNumber) {

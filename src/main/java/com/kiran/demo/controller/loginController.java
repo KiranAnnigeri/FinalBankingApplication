@@ -2,7 +2,6 @@ package com.kiran.demo.controller;
 
 import java.util.List;
 
-import javax.persistence.NonUniqueResultException;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.kiran.demo.model.AccountStatement;
@@ -24,12 +22,13 @@ import com.kiran.demo.model.TransferBalanceRequest;
 import com.kiran.demo.service.AccountService;
 import com.kiran.demo.service.AciveandMoreService;
 import com.kiran.demo.service.CheckActiveService;
+import com.kiran.demo.service.EmailService;
 import com.kiran.demo.service.MABService;
 import com.kiran.demo.service.addCustomerService;
 
 @RestController
 public class loginController {
-	
+
 	Logger logger = LoggerFactory.getLogger(loginController.class);
 
 	@Autowired
@@ -42,32 +41,34 @@ public class loginController {
 	private addCustomerService addcustomerService;
 	@Autowired
 	private AccountService accountservice;
+	@Autowired
+	private EmailService emailService;
 
-	//Get Details of all the active accounts
-	@RequestMapping("/ActiveAccounts")
+	// Get Details of all the active accounts
+	@GetMapping("/ActiveAccounts")
 	public List<Details> checkActive() {
 		logger.info("Checking the Active Status");
 		return checkactiveService.checkActivity();
 	}
 
-	//Get Details of all active accounts and positive balance
-	@RequestMapping("/ActiveAccounts/Balance>0")
+	// Get Details of all active accounts and positive balance
+	@GetMapping("/ActiveAccounts/Balance>0")
 	public List<Details> checkActiveBal() {
 		logger.info(" Verifing the validation ");
 		logger.trace(" validation is tracing");
 		return activeandmoreService.checkActivitybal();
 	}
 
-	//Get Details of all active account , positive balance and MAB>1000
-	@RequestMapping("/ActiveAccounts/Balance>0/MonthlyAverageBalance>1000")
+	// Get Details of all active account , positive balance and MAB>1000
+	@GetMapping("/ActiveAccounts/Balance>0/MonthlyAverageBalance>1000")
 	public List<Details> checkActiveBalMab() {
 		logger.trace(" Checking Balance");
 		logger.info("giving monthly average balance");
 		return mabService.checkActivitymab();
 	}
 
-	//Get Details of all accounts
-	@RequestMapping("/GetAllAccounts")
+	// Get Details of all accounts
+	@GetMapping("/GetAllAccounts")
 	public List<Details> getalldetails() {
 		logger.debug(" Provide All customer details ");
 		return addcustomerService.getAllOrders();
@@ -75,14 +76,14 @@ public class loginController {
 
 	// Input Customer Details
 	@PostMapping(value = "/AddCustomerDetails")
-	public void addCustomer(@Valid @RequestBody Details details) {
+	public void addCustomer(@Valid @RequestBody Details details) throws Exception{
 		logger.debug("Successfully Posted all Details of Customer ");
 		addcustomerService.addCustomer(details);
 	}
 
 	// Find customer by ID
 	@GetMapping(value = "/GetDetailsByID/{id}")
-	public Details getbyID(@PathVariable(value = "id") String id) {
+	public Details getbyID(@PathVariable(value = "id") String id) throws Exception {
 		logger.debug("Get Cutomer details By Account Id ");
 		return addcustomerService.getById(id);
 	}
@@ -96,8 +97,14 @@ public class loginController {
 
 	// Get statement
 	@RequestMapping("/GetStatement")
-	public AccountStatement getStatement(@RequestBody AccountStatementRequest accountStatementRequest){
+	public AccountStatement getStatement(@RequestBody AccountStatementRequest accountStatementRequest) {
 		logger.debug(" Providing the Account Statement ");
-	     return accountservice.getStatement(accountStatementRequest.getAccountNumber());
-	    }
+		return accountservice.getStatement(accountStatementRequest.getAccountNumber());
+	}
+	
+	//Send Email
+	@GetMapping("/SendEmail")
+	public String sendEmail() {
+		return emailService.sendEmail();
+	}
 }

@@ -69,7 +69,7 @@ public class Details {
 	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern ="dd/MM/yyyy")
 	@Past(message="Enter Valid Date")
 	private Date dob;
-	
+
 	@Column(name = "Account_Type")
 	private String accounttype;
 
@@ -180,9 +180,11 @@ public class Details {
 	@Override
 	public String toString() {
 		return "Details [accountid=" + accountid + ", customername=" + customername + ", pan=" + pan + ", dob=" + dob
-				+ ", accounttype=" + accounttype + ", accountstatus=" + accountstatus + ", accountbal=" + accountbal
-				+ ", phonenum=" + phonenum + ", email=" + email + ", mab=" + mab + "]";
+				+ ", accounttype=" + accounttype + ", accountstatus=" + accountstatus + ", accountbal="
+				+ accountbal + ", phonenum=" + phonenum + ", email=" + email + ", mab=" + mab + "]";
 	}
+
+	
 	
 	
 }

@@ -40,21 +40,16 @@ public class GenerateExceptionHandling extends ResponseEntityExceptionHandler {
     public ResponseEntity<String> handleNullPointerException(NullPointerException ex) {
         return new ResponseEntity<String>("No such element Exist in database.Please enter correct Id",HttpStatus.NOT_FOUND);
     }
+    
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<String> IllegalArgumentException(IllegalArgumentException ex) {
+        return new ResponseEntity<String>("Account ID alrady exists",HttpStatus.NOT_FOUND);
+    }
  
     @Override
     protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex,
             HttpHeaders headers, HttpStatus status, WebRequest request) {
         return new ResponseEntity<Object>("Please change the HTTP request method", HttpStatus.NOT_FOUND);
     }
- 
-    /*
-     * @ExceptionHandler(MethodArgumentNotValidException.class) public
-     * Map<String,String> handleInvalidArgument(MethodArgumentNotValidException ex){
-     * Map<String,String> errorMessage=new HashMap<>();
-     * ex.getBindingResult().getFieldError().forEach( error -> errorMessage.put(
-     * error.getfield(),error.getDefaultMessage() ) );
-     * 
-     * return errorMessage; }
-     */
  
 }
