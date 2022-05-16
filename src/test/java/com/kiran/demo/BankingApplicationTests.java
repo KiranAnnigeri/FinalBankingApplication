@@ -57,7 +57,6 @@ class BankingApplicationTests {
 	@Autowired
 	private AccountRepository accrepo;
 	
-	
 	// Adding Customer
 	@Test
 	public void NewCustomer() throws Exception {
